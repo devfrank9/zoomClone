@@ -1,5 +1,4 @@
 import http from "http";
-import { WebSocketServer } from "ws";
 import express from "express";
 
 const app = express();
@@ -19,6 +18,7 @@ function onSocketClose() {
   console.log("Disconnected from the Browser ❌");
 }
 
+/*
 const sockets = [];
 
 wss.on("connection", (socket) => {
@@ -40,5 +40,6 @@ wss.on("connection", (socket) => {
     }
   });
 });
+*/
 
 server.listen(3000, handleListen);
