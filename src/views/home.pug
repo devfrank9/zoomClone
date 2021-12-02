@@ -6,12 +6,12 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Noom
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
-    body 
-        header 
+    body
+        header
             h1 Noom
         main
             div#welcome
-                form
+                form    
                     input(placeholder="room name", required, type="text")
                     button Enter room
             div#call
@@ -20,6 +20,6 @@ html(lang="en")
                     button#mute Mute
                     button#camera Turn Camera Off
                     select#cameras
-                video#peerFace(autoplay,playsinline, width="400" height="400")
+                    video#peerFace(autoplay,playsinline, width="400" height="400")
         script(src="/socket.io/socket.io.js") 
-        script(src="/public/js/app.js")
+        script(src="/public/js/app.js") 
